@@ -1,45 +1,90 @@
-# LEARNING STATE
+# AI Privacy / Differential Privacy — Learning State
+
+> AI handoff: read `TUTORING_PROTOCOL.md` first, then use this file for the current mastery checkpoint.
+
+Last updated: 2026-10-06
+
+## North Star
+
+The goal is to solve **all of Homework 1 independently from a blank page**, while stating the correct privacy unit / protected unit and adjacency for every DP claim.
+
+The target is not answer recognition. The target is:
+
+1. Understand
+2. Reconstruct
+3. Transfer
+4. Independent Homework
+
+## Checkpoint Policy
+
+This repository is a persistent checkpoint store, not a turn-by-turn transcript.
+
+- Do **not** commit every explanation, drill, correction, or chat turn.
+- Update only when a real mastery stage changes, a dependency is cleared, or a durable DP takeaway changes.
+- Chat remains the working space; GitHub records stable milestones.
+- Homework solutions should not be stored prematurely.
+
+## Current Position
+
+### Course / homework model
+- Homework 1 defines the immediate target.
+- `Ch1_v2` is the main Lecture 1 reference.
+- `Ch1_v1` is an earlier near-duplicate.
+- Lecture 2 is deferred except when Homework 1 explicitly asks to name later accounting tools.
+
+### Current module
+**M0 — Randomized mechanism -> output distribution**
+
+Why this comes first:
+Before `P(A(D) in S)`, likelihood ratios, Laplace/Gaussian mechanisms, or membership inference can mean anything, the learner must have a clean mental model that for fixed `D`, a randomized mechanism `A(D)` is still a random output with a distribution.
+
+### Homework status
+**Not started on purpose.**
+
+No subproblem should be solved before its dependency gate is cleared.
+
+## Current Gate
+
+To clear M0, the learner must be able to do this **closed-book**:
+
+- distinguish what is fixed from what is random in a tiny randomized algorithm;
+- explain why a fixed dataset `D` does not imply a deterministic output;
+- describe the output distribution of `A(D)`;
+- interpret an event such as `A(D) in S` without treating it as notation to memorize.
+
+## Milestone Visual Policy
+
+At genuine mastery milestones, generate a standalone celebratory teaching image in the learner's preferred visual style.
+
+Planned major visual milestones:
+- after M2: first complete DP mental model;
+- after M5: adjacency -> sensitivity geometry;
+- after M9: mechanisms + clipping / utility;
+- after M12: complete privacy-unit / user-level mental model;
+- after M13: independent Homework 1 completion.
+
+The art is a mastery reward, not an automatic output after every lesson.
 
 <!-- tracker:begin -->
-as_of: 2026-10-06
-goal: Solve all of Homework 1 independently, closed-book, with correct privacy unit / adjacency stated for every DP claim.
-
-current_module:
-  id: M0
-  title: Randomized mechanism -> output distribution
-  status: READY
-
-mastery:
-  M0: 0
-  M1: 0
-  M2: 0
-  M3: 0
-  M4: 0
-  M5: 0
-  M6: 0
-  M7: 0
-  M8: 0
-  M9: 0
-  M10: 0
-  M11: 0
-  M12: 0
-  M13: 0
-
-status_scale:
-  0: not cleared
-  1: understand
-  2: reconstruct
-  3: transfer
-  4: independent-homework ready
-
-constraints:
-  - Do not reveal homework solutions before the prerequisite gate is cleared.
-  - Do not put target formulas into quiz prompts unless they were already taught as primitives.
-  - Classify errors as concept / notation / algebra / calculus / probability / strategy.
-  - Patch only the missing primitive, then retest.
-  - Background starts from zero; final mathematical difficulty is not simplified.
-
-next_gate:
-  - Explain, for a fixed dataset D, why a randomized mechanism A(D) is not a single deterministic value but a random output with a distribution.
-  - Identify what is fixed and what is random in a tiny example.
+asof: 2026-10-06
+goal: independently solve HW1 from a blank page with correct privacy unit and adjacency
+M0 | current | 0 | Randomized mechanism -> output distribution. First gate has not yet been tested.
+M1 | locked | 0 | Privacy unit / protected unit + adjacency.
+M2 | locked | 0 | Formal DP definition and quantifiers.
+M3 | locked | 0 | Membership inference, FPR/TPR, likelihood-ratio attacker.
+M4 | locked | 0 | Post-processing + composition.
+M5 | locked | 0 | Global sensitivity + l1/l2 geometry.
+M6 | locked | 0 | Laplace mechanism.
+M7 | locked | 0 | Gaussian mechanism.
+M8 | locked | 0 | Randomized response + unbiased estimation.
+M9 | locked | 0 | Vector means + clipping + utility error.
+M10 | locked | 0 | Repeated releases / accounting preview.
+M11 | locked | 0 | Central vs local threat models.
+M12 | locked | 0 | Record-level vs user-level DP + group privacy + contribution bounding.
+M13 | locked | 0 | Independent Homework 1 rehearsal.
+check: M0 | todo | Explain what is fixed and what is random when D is fixed but A is randomized.
+check: M0 | todo | Construct the output distribution of a tiny randomized mechanism.
+check: M0 | todo | Interpret P(A(D) in S) in plain language.
+takeaway: course | Every DP claim is meaningless until the privacy unit and adjacency are specified.
+takeaway: course | Homework is gated by prerequisites; do not reveal target formulas before the learner can reconstruct them.
 <!-- tracker:end -->
