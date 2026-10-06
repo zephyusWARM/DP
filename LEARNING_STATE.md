@@ -33,7 +33,7 @@ This repository is a persistent checkpoint store, not a turn-by-turn transcript.
 - Lecture 2 is deferred except when Homework 1 explicitly asks to name later accounting tools.
 
 ### Current module
-**M0 — Randomized mechanism -> output distribution**
+**M1 — Privacy unit / protected unit + adjacency**
 
 Why this comes first:
 Before `P(A(D) in S)`, likelihood ratios, Laplace/Gaussian mechanisms, or membership inference can mean anything, the learner must have a clean mental model that for fixed `D`, a randomized mechanism `A(D)` is still a random output with a distribution.
@@ -68,8 +68,8 @@ The art is a mastery reward, not an automatic output after every lesson.
 <!-- tracker:begin -->
 asof: 2026-10-06
 goal: independently solve HW1 from a blank page with correct privacy unit and adjacency
-M0 | current | 0 | Randomized mechanism -> output distribution. First gate has not yet been tested.
-M1 | locked | 0 | Privacy unit / protected unit + adjacency.
+M0 | cleared | 2 | Closed-book check passed: fixed D, mechanism randomness, output distribution, and event probability are distinguished correctly.
+M1 | current | 0 | Privacy unit / protected unit + adjacency.
 M2 | locked | 0 | Formal DP definition and quantifiers.
 M3 | locked | 0 | Membership inference, FPR/TPR, likelihood-ratio attacker.
 M4 | locked | 0 | Post-processing + composition.
@@ -82,9 +82,10 @@ M10 | locked | 0 | Repeated releases / accounting preview.
 M11 | locked | 0 | Central vs local threat models.
 M12 | locked | 0 | Record-level vs user-level DP + group privacy + contribution bounding.
 M13 | locked | 0 | Independent Homework 1 rehearsal.
-check: M0 | todo | Explain what is fixed and what is random when D is fixed but A is randomized.
-check: M0 | todo | Construct the output distribution of a tiny randomized mechanism.
-check: M0 | todo | Interpret P(A(D) in S) in plain language.
+check: M0 | done | Explain what is fixed and what is random when D is fixed but A is randomized.
+check: M0 | done | Construct the output distribution of a tiny randomized mechanism.
+check: M0 | done | Interpret P(A(D) in S) in plain language.
 takeaway: course | Every DP claim is meaningless until the privacy unit and adjacency are specified.
 takeaway: course | Homework is gated by prerequisites; do not reveal target formulas before the learner can reconstruct them.
+takeaway: M0 | For fixed D, the probability comes from the mechanism's internal randomness; the realized output is sampled according to the output distribution induced by that fixed D.
 <!-- tracker:end -->
