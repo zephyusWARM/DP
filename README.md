@@ -12,6 +12,24 @@ Every concept follows:
 
 A module is not cleared because it "looks familiar." It is cleared only after closed-book reconstruction.
 
+## Milestone visuals
+
+At genuine mastery milestones, create a standalone celebratory teaching image in the user's preferred style:
+
+- a young runner / student heroine as the recurring protagonist;
+- cinematic, near-realistic, high-aesthetic lighting and depth rather than a sterile infographic;
+- the DP concept just mastered should physically exist in the scene as meaningful visual structure: distributions, privacy walls, neighboring datasets, noise clouds, vectors, graphs, etc.;
+- low text; formulas/axes only when they help tell the concept visually;
+- vary the art direction between milestones rather than repeating one cute style;
+- images are rewards for demonstrated mastery, not automatic after every lesson.
+
+Suggested major visual milestones:
+- after M2: first full DP mental model;
+- after M5: adjacency -> sensitivity geometry;
+- after M9: mechanisms + clipping / utility;
+- after M12: complete privacy-unit / user-level mental model;
+- after M13: independent Homework 1 completion.
+
 ## Current state
 
 - Source homework: Homework 1, Lecture 1
