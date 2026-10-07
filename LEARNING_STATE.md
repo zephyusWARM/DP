@@ -41,7 +41,7 @@ Before `P(A(D) in S)`, likelihood ratios, Laplace/Gaussian mechanisms, or member
 ### Homework status
 **Problem 1(a) conceptually cleared. Problem 1(b) active.**
 
-Tonight's target: finish Problems 1 and 2 by 23:00 using just-in-time prerequisites.
+A complete large-print HW1 guided-solution booklet was generated on 2026-10-07 for offline study during travel. This changes the study workflow, not mastery: future gates are still cleared only by closed-book reconstruction / transfer.
 
 ## Current Gate
 
