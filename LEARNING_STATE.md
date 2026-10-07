@@ -2,7 +2,7 @@
 
 > AI handoff: read `TUTORING_PROTOCOL.md` first, then use this file for the current mastery checkpoint.
 
-Last updated: 2026-10-06
+Last updated: 2026-10-07
 
 ## North Star
 
@@ -33,15 +33,15 @@ This repository is a persistent checkpoint store, not a turn-by-turn transcript.
 - Lecture 2 is deferred except when Homework 1 explicitly asks to name later accounting tools.
 
 ### Current module
-**M1 — Privacy unit / protected unit + adjacency**
+**M4 — Post-processing + composition**
 
 Why this comes first:
 Before `P(A(D) in S)`, likelihood ratios, Laplace/Gaussian mechanisms, or membership inference can mean anything, the learner must have a clean mental model that for fixed `D`, a randomized mechanism `A(D)` is still a random output with a distribution.
 
 ### Homework status
-**Not started on purpose.**
+**Problem 1(a) conceptually cleared. Problem 1(b) active.**
 
-No subproblem should be solved before its dependency gate is cleared.
+Tonight's target: finish Problems 1 and 2 by 23:00 using just-in-time prerequisites.
 
 ## Current Gate
 
@@ -66,13 +66,13 @@ Planned major visual milestones:
 The art is a mastery reward, not an automatic output after every lesson.
 
 <!-- tracker:begin -->
-asof: 2026-10-06
+asof: 2026-10-07
 goal: independently solve HW1 from a blank page with correct privacy unit and adjacency
 M0 | cleared | 2 | Closed-book check passed: fixed D, mechanism randomness, output distribution, and event probability are distinguished correctly.
-M1 | current | 0 | Privacy unit / protected unit + adjacency.
-M2 | locked | 0 | Formal DP definition and quantifiers.
+M1 | cleared | 3 | Transfer check passed: privacy unit, adjacency, symmetry, and a non-symmetric counterexample are understood.
+M2 | current | 2 | Can reconstruct the event-wise DP inequality and explain the role of symmetry/quantification.
 M3 | locked | 0 | Membership inference, FPR/TPR, likelihood-ratio attacker.
-M4 | locked | 0 | Post-processing + composition.
+M4 | current | 0 | Problem 1(b) randomized post-processing is now active.
 M5 | locked | 0 | Global sensitivity + l1/l2 geometry.
 M6 | locked | 0 | Laplace mechanism.
 M7 | locked | 0 | Gaussian mechanism.
@@ -88,4 +88,8 @@ check: M0 | done | Interpret P(A(D) in S) in plain language.
 takeaway: course | Every DP claim is meaningless until the privacy unit and adjacency are specified.
 takeaway: course | Homework is gated by prerequisites; do not reveal target formulas before the learner can reconstruct them.
 takeaway: M0 | For fixed D, the probability comes from the mechanism's internal randomness; the realized output is sampled according to the output distribution induced by that fixed D.
+check: P1a | done | One-sided suffices under symmetric adjacency; understands why the reverse direction comes from reapplying the definition to the swapped adjacent pair.
+check: P1b | todo | Prove randomized post-processing by conditioning on an independent random seed R.
+takeaway: M1 | Symmetry does not algebraically reverse an inequality; it makes the swapped ordered pair adjacent, so the definition applies again.
 <!-- tracker:end -->
+
