@@ -172,3 +172,7 @@ When taking over:
 Desired experience:
 
 > Rigorous enough for NTU EE mathematics, beginner-safe for first-time DP learning, and interactive enough that the learner eventually solves the homework without a solution key.
+
+## Interactive teaching pages
+
+When building or handing off an interactive teaching webpage, read `INTERACTIVE_LESSON_PROTOCOL.md` first. It is the durable architecture guide for single-file HTML teaching pages: pure simulation/model logic separated from DOM/UI, probability deciding branches while physics renders them, theory shown alongside empirical simulation, one main interaction, Apple-like minimal visual language, mobile-safe layout, dark/light themes, and reduced-motion support.
